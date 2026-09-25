@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-warm: #F3F1EC;
+  --bg-surface: #FAF8F5;
+  --text-main: #141312;
+  --text-muted: #5C5852;
+  --gold-accent: #C5A059;
+  --border-line: #E3DDD4;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #F3F1EC;
+  color: #141312;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  background-color: #F3F1EC;
+  color: #141312;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom scrollbar matching architectural warmth */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F3F1EC;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4CFC5;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A059;
+}
+
+/* Subtle selection color */
+::selection {
+  background: rgba(197, 160, 89, 0.25);
+  color: #141312;
+}
